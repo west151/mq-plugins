@@ -1,0 +1,12 @@
+#ifndef CALCULATION_GLOBAL_H
+#define CALCULATION_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(CALCULATION_LIBRARY)
+#  define CALCULATION_EXPORT Q_DECL_EXPORT
+#else
+#  define CALCULATION_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // CALCULATION_GLOBAL_H
