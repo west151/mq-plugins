@@ -1,1 +1,1 @@
-# test-plugins
+# mq-plugins
