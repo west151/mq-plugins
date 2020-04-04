@@ -2,6 +2,7 @@
 #define UI_CONTROLLER_H
 
 #include <QQmlEngine>
+#include <QQuickView>
 
 #include "../../src/system_manager_ui_interface.h"
 
@@ -16,6 +17,7 @@ public:
 
 private:
     QQmlEngine * ptr_engine;
+    QQuickView * ptr_quick_view;
 };
 
 #endif // UI_CONTROLLER_H

@@ -22,6 +22,7 @@ find_package(Qt5 REQUIRED COMPONENTS Quick Core Qml)
 
 #add_subdirectory(3rdparty)
 add_subdirectory(lib)
+# build "lib" then
+#add_subdirectory(test)
 add_subdirectory(plugins)
-add_subdirectory(test)
 add_subdirectory(src)
