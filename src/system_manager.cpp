@@ -6,7 +6,7 @@
 #include <QCoreApplication>
 #include <QPluginLoader>
 
-#include "system_manager_ui_interface.h"
+#include "base_ui_interface.h"
 
 #ifdef Q_OS_WIN
 static const QString lib_prefix = "";
@@ -107,7 +107,7 @@ void system_manager::load_ui_controller_plugin(QPluginLoader &plugin_loader, con
 
     if (plugin)
     {
-        system_manager_ui_interface * ctrl_plugin = qobject_cast<system_manager_ui_interface*>(plugin);
+        base_ui_interface * ctrl_plugin = qobject_cast<base_ui_interface*>(plugin);
 
         if (!ctrl_plugin) {
             qWarning() << Q_FUNC_INFO << "Plugin not loaded. Name and version okay but plugin did not load.";

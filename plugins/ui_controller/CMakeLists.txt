@@ -5,8 +5,8 @@ qt5_add_resources(RESOURCES ui_controller.qrc)
 add_library(${PROJECT} MODULE
     ui_controller.cpp
     ui_controller.h
-    ../../src/system_manager_ui_interface.h
-    ../../src/system_manager_ui_interface.cpp
+    ../../src/base_ui_interface.h
+    ../../src/base_ui_interface.cpp
     ${RESOURCES}
 )
 
