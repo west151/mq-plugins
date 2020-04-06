@@ -5,3 +5,5 @@ function(enable_plugin target)
 endfunction()
 
 add_subdirectory(ui_controller)
+add_subdirectory(qt_mq_controller)
+add_subdirectory(em_mq_controller)

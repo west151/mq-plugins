@@ -7,6 +7,7 @@
 #include <QPluginLoader>
 
 #include "base_ui_interface.h"
+#include "base_mq_interface.h"
 
 #ifdef Q_OS_WIN
 static const QString lib_prefix = "";
