@@ -1,6 +1,11 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(app VERSION 1.0 LANGUAGES CXX)
+set(VERSION_MAJOR 0)
+set(VERSION_MINOR 1)
+set(VERSION_PATCH 0)
+set(SOFT_VERSION ${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH})
+
+project(app VERSION ${SOFT_VERSION} LANGUAGES CXX)
 
 set(PROJECT_NAME "mq-plugins")
 
@@ -18,7 +23,11 @@ set(PLUGIN_DIR ${CMAKE_BINARY_DIR}/bin/plugins)
 
 option(BUILD_SHARED_LIBS "Build all libraries as shared libraries instead of static" OFF)
 
-find_package(Qt5 REQUIRED COMPONENTS Quick Core Qml)
+find_package(Qt5 REQUIRED COMPONENTS
+    Quick
+    Core
+    Qml
+)
 
 #add_subdirectory(3rdparty)
 add_subdirectory(lib)
